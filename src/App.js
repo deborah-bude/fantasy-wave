@@ -16,10 +16,10 @@ function App() {
       <section className="corps_page">
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path="/employees-list" element={<CosplayUniverse/>}></Route>
-          <Route path="/employees-list" element={<FirstCosplay/>}></Route>
-          <Route path="/employees-list" element={<MadeCostumes/>}></Route>
-          <Route path="/employees-list" element={<Competition/>}></Route>
+          <Route path="/univers-cosplay" element={<CosplayUniverse/>}></Route>
+          <Route path="/premier-cosplay" element={<FirstCosplay/>}></Route>
+          <Route path="/concevoir-costume" element={<MadeCostumes/>}></Route>
+          <Route path="/concours" element={<Competition/>}></Route>
         </Routes>
       </section>
       <Footer/>
