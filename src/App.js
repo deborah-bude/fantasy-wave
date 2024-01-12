@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {Header} from "./components/Header";
+import {Footer} from "./components/Footer";
+import {Route, Routes} from "react-router-dom";
+import CosplayUniverse from "./page/CosplayUniverse";
+import FirstCosplay from "./page/FirstCosplay";
+import MadeCostumes from "./page/MadeCostumes";
+import Competition from "./page/Competition";
+import Home from "./page/Home";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <section className="corps_page">
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/employees-list" element={<CosplayUniverse/>}></Route>
+          <Route path="/employees-list" element={<FirstCosplay/>}></Route>
+          <Route path="/employees-list" element={<MadeCostumes/>}></Route>
+          <Route path="/employees-list" element={<Competition/>}></Route>
+        </Routes>
+      </section>
+      <Footer/>
     </div>
   );
 }
