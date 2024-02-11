@@ -13,7 +13,7 @@ a:hover {
 
 /**** 1 - Typographie ****/
 h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   background: linear-gradient(90deg, #FF7171, #AA96DA);
   -webkit-background-clip: text;
@@ -22,9 +22,9 @@ h2 {
 }
 
 p {
-  margin-bottom: 12px;
+  margin: 2rem 0;
 }
 
-.corps_page {
-  margin-top: 100px;
+section {
+  margin: 100px 0;
 }

@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         "purple": "#AA96DA",
+        "dark-pink": "#C34C63",
+        "pink": "#FF7171",
+        "dark-blue": "#0A1425",
         "transparent-purple": "rgba(170, 150, 218, 0.5)",
       }
     },
