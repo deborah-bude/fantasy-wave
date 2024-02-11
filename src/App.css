@@ -1,3 +1,30 @@
+/*
+ * 0 - Normalize
+ * 1 - Typographie
+ */
+
+
+/**** 0 - Normalize ****/
+a,
+a:hover {
+  text-decoration: none;
+  color: #AA96DA;
+}
+
+/**** 1 - Typographie ****/
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FF7171, #AA96DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
 p {
   margin-bottom: 12px;
+}
+
+.corps_page {
+  margin-top: 100px;
 }

@@ -2,16 +2,20 @@ import React from "react";
 import {Button} from "../components/Button";
 import {CardLarge} from "../components/CardLarge";
 import {Blurb} from "../components/Blurb";
+import HomeHeaderImg from "../assets/home-header-image-cosplayeur.jpg"
+import HomeBannerImg from "../assets/home-banner-image-cosplayeur.jpg"
 export default function Home() {
     return (
         <main>
-            <section>
-                <div>
+            <section className="bg-transparent-purple flex flex-wrap justify-center items-center">
+                <div className="md:w-6/12 p-2">
                     <h1 className="mb-2 mt-0 text-5xl font-medium leading-tight text-primary">Costumes et Aventures : Plongée dans le Monde du Cosplay</h1>
                     <p>Bienvenue dans notre monde où les tissus prennent vie, où les rêves s'incarnent, et où chaque couture raconte une épopée : Explorez, Créez, Enchantez avec Fantasy Weave, l'univers du cosplay en action.</p>
                     <Button text="En savoir plus" link="/univers-cosplay"/>
                 </div>
-                <img src="" alt=""/>
+                <div className="md:w-6/12">
+                    <img className="h-full object-cover" src={HomeHeaderImg} alt="Cosplayeurs en convention"/>
+                </div>
             </section>
             <section>
                 <h2>Découvrez l'Univers du Cosplay</h2>
@@ -21,15 +25,15 @@ export default function Home() {
                     <Button text="L'histoire du cosplay" link="/histoire-cosplay"/>
                 </div>
             </section>
-            <img src="" alt=""/>
+            <img src={HomeBannerImg} alt=""/>
             <section>
                 <h2>Son premier cosplay</h2>
                 <p>Quand on débute, ça peut souvent être compliqué de savoir où commencer et ce qu’il faut faire. On vous propose différentes astuces pour bien débuter.</p>
                 <Button text="En savoir plus" link="/premier-cosplay"/>
             </section>
             <section>
-                <img src="" alt=""/>
-                <div>
+                <img className="md:w-6/12" src="" alt=""/>
+                <div className="md:w-6/12">
                     <h2>Du Rêve à la Réalité Cosplay : Construisez Votre Costume</h2>
                     <p>De la conception à la réalisation, découvrez comment construire vos propres costumes, accessoires, armes etc.</p>
                     <div>
@@ -43,12 +47,12 @@ export default function Home() {
                 </div>
             </section>
             <section>
-                <div>
+                <div className="md:w-6/12">
                     <h2>Cosplay en Scène : Une palette de concours et d'expressions</h2>
                     <p>Les concours demandent différentes compétences et ne sont jamais pareils suivant les organisateurs. Retrouvez les différents types de concours possible et quelles compétences il faut pouvoir faire sur son costume.</p>
                     <Button text="Découvrir les concours" link="/concours"/>
                 </div>
-                <img src="" alt=""/>
+                <img className="md:w-6/12" src="" alt=""/>
             </section>
             <section>
                     <h2>Cosplay en Scène : Une palette de concours et d'expressions</h2>
